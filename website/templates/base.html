@@ -4,12 +4,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta name="description" content="{% block meta_description %}Welcome To the website of Dr.Naveen DMD dentist.{% endblock  %}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Dr. Naveen</title>
+  <title>{% block title %}Dr. Naveen {% endblock  %}</title>
 
   <!-- Favicon -->
   <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
@@ -87,7 +87,7 @@
                       <li><a href="index.html">- Home</a></li>
                       <li><a href="about.html">- About Us</a></li>
                       <li><a href="service.html">- Service</a></li>
-                      <li><a href="pricing.html">- Pricing</a></li>
+                      <li><a href="{% url 'home' %}">- Pricing</a></li>
                       <li><a href="blog.html">- Blog</a></li>
                       <li><a href="blog-details.html">- Blog Details</a></li>
                       <li><a href="contact.html">- Contact</a></li>
